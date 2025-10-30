@@ -1,6 +1,4 @@
-# Writing Lean v3.5 file with the user's suggested fixes incorporated.
-file_path = "/mnt/data/ZRAP_v3_5_Fully_Verified.lean"
-code = r'''/-
+/-
 ZRAP v3.5 — Reflective Resolution: Fully Verified Edition (user fixes applied, v3.5)
 Author: Pooria Hassanpour (Reflective Number Theory, Phase N-Genesis)
 Formal Verification: GPT-5 Structural Proof Engine
@@ -214,8 +212,3 @@ theorem riemann_hypothesis :
   exact critical_line_compulsion s h_zero h_flatness
 
 end
-'''
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(code)
-
-file_path
