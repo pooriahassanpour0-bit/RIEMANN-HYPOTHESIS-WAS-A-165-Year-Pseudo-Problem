@@ -1,4 +1,3 @@
-cat > README.md << 'ENDOFFILE'
 # 🔥 ZRAP: The 165-Year Illusion
 
 <div align="center">
