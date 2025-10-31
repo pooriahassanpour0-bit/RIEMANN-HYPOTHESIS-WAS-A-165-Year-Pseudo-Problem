@@ -1,0 +1,6 @@
+\n--- elan --version ---
+elan 4.1.2 (58e8d545e 2025-05-26)
+\n--- lean --version ---
+Lean (version 4.25.0-rc2, x86_64-unknown-linux-gnu, commit 744f98064b056ee27fc8c97f524797c8cc96f436, Release)
+\n--- lake --version ---
+Lake version 5.0.0-src+744f980 (Lean version 4.25.0-rc2)

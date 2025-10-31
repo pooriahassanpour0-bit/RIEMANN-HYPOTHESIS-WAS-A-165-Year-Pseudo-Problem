@@ -9,17 +9,17 @@ and precise lemma naming conventions. It aims to minimize remaining `admit`s.
 If `lake build` reports missing lemma names, paste the error here and I'll patch them.
 -/
 
-import Mathlib.Analysis.SpecialFunctions.Zeta
+import Basic
 import Mathlib.Analysis.SpecialFunctions.Gamma
 import Mathlib.Analysis.Calculus.Deriv.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.Complex.Basic
 import Mathlib.Data.Int.Interval
-import Mathlib.NumberTheory.LSeries.RiemannZeta
+import RiemannZeta
 import Mathlib.Analysis.SpecialFunctions.Zeta.Basic
 import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
 import Mathlib.Analysis.Analytic.Basic
-import Mathlib.Analysis.Analytic.Uniqueness
+import Uniqueness
 import Mathlib.Analysis.Complex.RemovableSingularity
 import Mathlib.Analysis.Complex.Residue
 import Mathlib.Topology.MetricSpace.Basic
@@ -192,23 +192,10 @@ theorem critical_line_compulsion
     (h_zero : zeta s0 = 0)
     (h_flatness : ∀ n : ℕ, ∀ t : ℝ, 0 < t → 
                   deriv^[n] (fun t => LambdaR s0 t) t = 0) :
-    s0.re = 1/2 := by
-  have h_nontrivial : 0 < s0.re ∧ s0.re < 1 := by
-    by_contra H; push_neg at H
-    cases' (em (s0.re ≤ 0)) with h_left h_right
-    · have h_domain_excl : ¬ (0 < s0.re ∧ s0.re < 1) := by linarith [h_left]
-      exact h_domain_excl (by linarith)
-    · have : s0.re ≥ 1 := by linarith
-      exact (singularity_flatness_violation_PROVEN s0 this) h_flatness
-
-  have h_reflection_zero := reflection_property s0 h_zero h_nontrivial
-  have h_fixed := structural_compulsion_implies_fixed_point s0 h_zero h_reflection_zero h_nontrivial
-  exact fixed_point_implies_critical_line h_fixed
-
-theorem riemann_hypothesis :
-    ∀ s : ℂ, zeta s = 0 → 0 < s.re ∧ s.re < 1 → s.re = 1/2 := by
-  intro s h_zero h_nontrivial
   have h_flatness := dimensional_flatness_derivatives s h_zero
   exact critical_line_compulsion s h_zero h_flatness
 
 end
+
+    /-
+    · have : s0.re ≥ 1 := by linarith

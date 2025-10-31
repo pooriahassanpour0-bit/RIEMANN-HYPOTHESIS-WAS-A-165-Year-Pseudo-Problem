@@ -1,0 +1,139 @@
+==== ENVIRONMENT SNAPSHOT ====
+2025-10-31T14:50:30+00:00
+Linux codespaces-2eb4c1 6.8.0-1030-azure #35~22.04.1-Ubuntu SMP Mon May 26 18:08:30 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+==== elan / lean / lake versions ====
+elan: elan 4.1.2 (58e8d545e 2025-05-26)
+lean: Lean (version 4.25.0-rc2, x86_64-unknown-linux-gnu, commit 744f98064b056ee27fc8c97f524797c8cc96f436, Release)
+lake: Lake version 5.0.0-src+744f980 (Lean version 4.25.0-rc2)
+
+==== GIT STATUS ====
+branch: main
+# branch.oid e481104b5445dc90fd9d29c7444ca6a96e193317
+# branch.head main
+# branch.upstream origin/main
+# branch.ab +0 -0
+1 .D N... 100644 100644 000000 4e6c162c85ae80c45bb5b61b2c262e1da9c60228 4e6c162c85ae80c45bb5b61b2c262e1da9c60228 Basic.lean
+1 .D N... 100644 100644 000000 3b57258f4f31491abf1ea2f35316dd9941c174c3 3b57258f4f31491abf1ea2f35316dd9941c174c3 RiemannZeta.lean
+1 .D N... 100644 100644 000000 0e2084592eeed54350a4fcb6f987a723c9d7e813 0e2084592eeed54350a4fcb6f987a723c9d7e813 Uniqueness.lean
+1 .D N... 100644 100644 000000 5f1438ed32fbb077b89dbce1eb7f2ba30e89173e 5f1438ed32fbb077b89dbce1eb7f2ba30e89173e "ZRAP_v3_5_Fully_Verified.lean\" code"
+? .lake/
+? COMPILATION_REPORT.md
+? ZRAP_v3_5_Fully_Verified.lean
+? docs/
+? lake-manifest.json
+? lakefile.lean
+? lean-toolchain
+? src/
+
+==== lake update (full stdout+stderr) ====
+info: mathlib: checking out revision '81ccf8f455f218d30ffa5fea34f10e82a3dbefa6'
+info: toolchain not updated; already up-to-date
+info: mathlib: running post-update hooks
+Not running `lake exe cache get` yet, as the `lake` version does not match the toolchain version in the project.
+You should run `lake exe cache get` manually.
+
+==== lake build (full stdout+stderr) ====
+Build completed successfully (0 jobs).
+
+==== lean --make (inside lake env) ====
+ELAN=elan
+ELAN_HOME=/home/codespace/.elan
+ELAN_TOOLCHAIN=leanprover/lean4:v4.25.0-rc2
+LAKE=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/lake
+LAKE_HOME=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2
+LAKE_PKG_URL_MAP={}
+LAKE_NO_CACHE=false
+LAKE_ARTIFACT_CACHE=false
+LAKE_CACHE_KEY=
+LAKE_CACHE_ARTIFACT_ENDPOINT=
+LAKE_CACHE_REVISION_ENDPOINT=
+LEAN=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/lean
+LEAN_SYSROOT=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2
+LEAN_AR=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/llvm-ar
+LEAN_CC=
+LAKE_CACHE_DIR=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lake/cache
+LEAN_PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/lib/lean:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib/lean
+LEAN_SRC_PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/src/lean/lake
+LEAN_GITHASH=744f98064b056ee27fc8c97f524797c8cc96f436
+PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/bin:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin:/home/codespace/.elan/bin:/home/codespace/.elan/bin:/usr/local/rvm/gems/ruby-3.4.1/bin:/usr/local/rvm/gems/ruby-3.4.1@global/bin:/usr/local/rvm/rubies/ruby-3.4.1/bin:/vscode/bin/linux-x64/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v22.17.0/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin:/home/codespace/.vscode-remote/data/User/globalStorage/github.copilot-chat/debugCommand
+LD_LIBRARY_PATH=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib/lean:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/lib
+
+==== git add/commit (dry-check) ====
+# branch.oid e481104b5445dc90fd9d29c7444ca6a96e193317
+# branch.head main
+# branch.upstream origin/main
+# branch.ab +0 -0
+1 .D N... 100644 100644 000000 4e6c162c85ae80c45bb5b61b2c262e1da9c60228 4e6c162c85ae80c45bb5b61b2c262e1da9c60228 Basic.lean
+1 .D N... 100644 100644 000000 3b57258f4f31491abf1ea2f35316dd9941c174c3 3b57258f4f31491abf1ea2f35316dd9941c174c3 RiemannZeta.lean
+1 .D N... 100644 100644 000000 0e2084592eeed54350a4fcb6f987a723c9d7e813 0e2084592eeed54350a4fcb6f987a723c9d7e813 Uniqueness.lean
+1 .D N... 100644 100644 000000 5f1438ed32fbb077b89dbce1eb7f2ba30e89173e 5f1438ed32fbb077b89dbce1eb7f2ba30e89173e "ZRAP_v3_5_Fully_Verified.lean\" code"
+? .lake/
+? COMPILATION_REPORT.md
+? ZRAP_v3_5_Fully_Verified.lean
+? docs/
+? lake-manifest.json
+? lakefile.lean
+? lean-toolchain
+? src/
+
+LOG SAVED TO: docs/logs/COMPILATION_LOGS.txt
+
+==== PINNING VERIFICATION: lake update (after pin) ====
+info: toolchain not updated; already up-to-date
+info: mathlib: running post-update hooks
+Not running `lake exe cache get` yet, as the `lake` version does not match the toolchain version in the project.
+You should run `lake exe cache get` manually.
+
+==== lake build (after pin) ====
+Build completed successfully (0 jobs).
+
+==== lean --make (inside lake env) (after pin) ====
+ELAN=elan
+ELAN_HOME=/home/codespace/.elan
+ELAN_TOOLCHAIN=leanprover/lean4:v4.25.0-rc2
+LAKE=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/lake
+LAKE_HOME=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2
+LAKE_PKG_URL_MAP={}
+LAKE_NO_CACHE=false
+LAKE_ARTIFACT_CACHE=false
+LAKE_CACHE_KEY=
+LAKE_CACHE_ARTIFACT_ENDPOINT=
+LAKE_CACHE_REVISION_ENDPOINT=
+LEAN=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/lean
+LEAN_SYSROOT=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2
+LEAN_AR=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin/llvm-ar
+LEAN_CC=
+LAKE_CACHE_DIR=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lake/cache
+LEAN_PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/lib/lean:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/lib/lean:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib/lean
+LEAN_SRC_PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/src/lean/lake
+LEAN_GITHASH=744f98064b056ee27fc8c97f524797c8cc96f436
+PATH=/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/bin:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/bin:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/bin:/home/codespace/.elan/bin:/home/codespace/.elan/bin:/usr/local/rvm/gems/ruby-3.4.1/bin:/usr/local/rvm/gems/ruby-3.4.1@global/bin:/usr/local/rvm/rubies/ruby-3.4.1/bin:/vscode/bin/linux-x64/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v22.17.0/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin:/home/codespace/.vscode-remote/data/User/globalStorage/github.copilot-chat/debugCommand
+LD_LIBRARY_PATH=/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib/lean:/home/codespace/.elan/toolchains/leanprover--lean4---v4.25.0-rc2/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/mathlib/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/plausible/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/LeanSearchClient/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/importGraph/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/proofwidgets/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/aesop/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Qq/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/batteries/.lake/build/lib:/workspaces/RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/.lake/packages/Cli/.lake/build/lib
+
+PIN VERIFY DONE
+
+==== GIT COMMIT & PUSH ====
+warning: adding embedded git repository: .lake/packages/Cli
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> .lake/packages/Cli
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached .lake/packages/Cli
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+warning: adding embedded git repository: .lake/packages/LeanSearchClient
+warning: adding embedded git repository: .lake/packages/Qq
+warning: adding embedded git repository: .lake/packages/aesop
+warning: adding embedded git repository: .lake/packages/batteries
+warning: adding embedded git repository: .lake/packages/importGraph
+warning: adding embedded git repository: .lake/packages/mathlib
+warning: adding embedded git repository: .lake/packages/plausible
+warning: adding embedded git repository: .lake/packages/proofwidgets
