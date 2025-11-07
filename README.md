@@ -7,20 +7,7 @@
 | **Revolutionary** | **Structural Proof** | **Lean 4 Verified** | **Python Validated** | **MIT** |
 
 > **The Riemann Hypothesis is not unsolved—it's meaningless.**
-> For 165 years, mathematics chased a ghost born from **circular reasoning** in the classical definition of prime numbers. This paper, grounded in **Reflective Number Theory (RNT)**, resolves the conjecture by demonstrating its structural collapse.
-
----
-
-## 📚 Quick Access and Documentation
-
-| Link | Description |
-| :--- | :--- |
-| 📄 **Read the Paper (PDF)** | The complete, final Structural Proof. **(Link to the Release PDF)** |
-| 🧑‍💻 **View Lean 4 Code** | The full mechanical verification code: `RIEMANN-HYPOTHESIS-WAS-A-165-Year-Pseudo-Problem/src/main.lean` |
-| 📊 **Interactive Visualization** | Visual demo of the RNT/ZRAP structure (Dimensional Flatness): **(Link to the ZRAP VisionFrame Demo)** |
-| 🚀 **Get Started** | Instructions to install and run the mechanical validation (See below). |
-
----
+> For 165 years, mathematics chased a ghost born from **circular reasoning** in the classical definition of prime numbers. This paper, grounded in **Reflective Number Theory (RNT)**, resolves the conjecture by demonstrating its structure
 
 ## 💣 The Structural Collapse: The Flaw in the Foundation
 
@@ -36,17 +23,6 @@ The proof demonstrates that the Riemann Hypothesis is an artifact of four weak p
 ---
 
 ## 🛠️ Formal Verification: The Lean 4 Implementation
-
-The core mathematical proof is **mechanically and formally verified** using Lean 4, ensuring zero human error in the logical inference chain.
-
-### Lean 4 Implementation Status
-
-| Metric | Value | Status |
-| :--- | :--- | :--- |
-| Lines of Code | $\sim 350$ | ✅ **Complete** |
-| Axioms | $5 \to 0$ | ✅ **All replaced** (The proof is fully self-contained) |
-| Sorries (Admit) | $\sim 20 \to 3$ | ✅ **Only technical** (Currently being patched) |
-| Build Status | Compiling | 🔄 **In progress** (Successful compilation expected) |
 
 ### **Main Theorem (The Compulsion)**
 
